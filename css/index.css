@@ -1,0 +1,242 @@
+:root {
+  --primary: hsl(240, 38%, 20%);
+  --secondary: hsl(240, 18%, 77%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+}
+.container {
+  background: url(/images/pattern-bg.svg) no-repeat 100% 26%/80%,
+    url(/images/pattern-curve.svg) no-repeat 20% 100%,
+    url(/images/pattern-quotes.svg) no-repeat 30% 65%/16%;
+}
+.women-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.women-card .img {
+  position: relative;
+  margin-bottom: 3rem;
+}
+.women-card .img-card {
+  padding: 4rem 1rem 0 1rem;
+  text-align: center;
+}
+.women-card .img-card img {
+  width: 300px;
+  -webkit-box-shadow: 1px 5px 15px 10px rgba(17, 17, 17, 0.116);
+  box-shadow: 1px 5px 15px 10px rgba(17, 17, 17, 0.116);
+}
+.women-card .img-arrows {
+  padding: 5px 11px;
+  display: inline-block;
+  border-radius: 100px;
+  background-color: #fff;
+  position: absolute;
+  top: 97%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.women-card .img-arrows a {
+  cursor: pointer;
+}
+.women-card .img-arrows .prev {
+  padding-right: 35px;
+}
+.main-p-card {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.main-p-card .main-para {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--primary);
+}
+.main-name {
+  text-align: center;
+  padding: 0 1rem 2rem 1rem;
+}
+.main-name .name {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.main-name .skill {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--secondary);
+}
+.men-card {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.men-card .img {
+  position: relative;
+  margin-bottom: 3rem;
+}
+.men-card .img-card {
+  padding: 4rem 1rem 0 1rem;
+  text-align: center;
+}
+.men-card .img-card img {
+  width: 285px;
+  -webkit-box-shadow: 1px 5px 15px 10px rgba(17, 17, 17, 0.116);
+  box-shadow: 1px 5px 15px 10px rgba(17, 17, 17, 0.116);
+}
+.men-card .img-arrows {
+  padding: 5px 11px;
+  display: inline-block;
+  border-radius: 100px;
+  background-color: #fff;
+  position: absolute;
+  top: 97%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.men-card .img-arrows a {
+  cursor: pointer;
+}
+.men-card .img-arrows .prev {
+  padding-right: 35px;
+}
+.main-p-card {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.main-p-card .main-para {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--primary);
+}
+.main-name {
+  text-align: center;
+  padding: 0 1rem 2rem 1rem;
+}
+.main-name .name {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.main-name .skill {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--secondary);
+}
+@media all and (min-width: 750px) {
+  .container {
+    background: url(/images/pattern-quotes.svg) no-repeat 30% 30%,
+      url(/images/pattern-bg.svg) no-repeat 100% 120%,
+      url(/images/pattern-curve.svg) no-repeat 25% 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 0 5rem;
+  }
+  .women-card {
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  .women-card .img-card {
+    padding: 4rem 1rem 0 0rem;
+  }
+  .women-card .img-card img {
+    width: 500px;
+  }
+  .text-section {
+    position: absolute;
+    right: 30%;
+    left: 10%;
+    margin: 5rem 0;
+    /* z-index: 100; */
+  }
+  .main-p-card {
+    text-align: start;
+    padding: 7rem 0rem 1rem 1rem;
+  }
+  .main-p-card .main-para {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--primary);
+  }
+  .main-name {
+    text-align: start;
+    padding: 0 1rem 2rem 1rem;
+  }
+  .main-name .name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: inline-block;
+  }
+  .main-name .skill {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--secondary);
+    display: inline-block;
+  }
+  .men-card {
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  .men-card .img-card {
+    padding: 4rem 1rem 0 0rem;
+  }
+  .men-card .img-card img {
+    width: 500px;
+  }
+  .text-section {
+    position: absolute;
+    right: 30%;
+    left: 10%;
+    margin: 5rem 0;
+    /* z-index: 100; */
+  }
+  .main-p-card {
+    text-align: start;
+    padding: 7rem 0rem 1rem 1rem;
+  }
+  .main-p-card .main-para {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--primary);
+  }
+  .main-name {
+    text-align: start;
+    padding: 0 1rem 2rem 1rem;
+  }
+  .main-name .name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: inline-block;
+  }
+  .main-name .skill {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--secondary);
+    display: inline-block;
+  }
+}
+/*# sourceMappingURL=index.css.map */
